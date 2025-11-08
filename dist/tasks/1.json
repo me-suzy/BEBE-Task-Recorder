@@ -1,0 +1,394 @@
+{
+  "version": "1.0",
+  "created": "2025-11-08T20:35:46.089673",
+  "event_count": 63,
+  "events": [
+    {
+      "type": "mouse_move",
+      "x": 390,
+      "y": 316,
+      "timestamp": 0.8148453235626221
+    },
+    {
+      "type": "mouse_move",
+      "x": 627,
+      "y": 532,
+      "timestamp": 0.9187500476837158
+    },
+    {
+      "type": "mouse_move",
+      "x": 847,
+      "y": 809,
+      "timestamp": 1.0218877792358398
+    },
+    {
+      "type": "mouse_move",
+      "x": 895,
+      "y": 878,
+      "timestamp": 1.1268794536590576
+    },
+    {
+      "type": "mouse_move",
+      "x": 945,
+      "y": 936,
+      "timestamp": 1.2296922206878662
+    },
+    {
+      "type": "mouse_move",
+      "x": 949,
+      "y": 962,
+      "timestamp": 1.3340816497802734
+    },
+    {
+      "type": "mouse_move",
+      "x": 925,
+      "y": 1025,
+      "timestamp": 1.4386672973632812
+    },
+    {
+      "type": "mouse_move",
+      "x": 921,
+      "y": 1043,
+      "timestamp": 1.5419654846191406
+    },
+    {
+      "type": "mouse_click",
+      "x": 921,
+      "y": 1043,
+      "button": "Button.left",
+      "pressed": true,
+      "timestamp": 1.6629657745361328
+    },
+    {
+      "type": "mouse_click",
+      "x": 921,
+      "y": 1043,
+      "button": "Button.left",
+      "pressed": false,
+      "timestamp": 1.7345447540283203
+    },
+    {
+      "type": "mouse_move",
+      "x": 919,
+      "y": 1046,
+      "timestamp": 1.8463232517242432
+    },
+    {
+      "type": "mouse_move",
+      "x": 818,
+      "y": 904,
+      "timestamp": 1.9506690502166748
+    },
+    {
+      "type": "mouse_move",
+      "x": 400,
+      "y": 467,
+      "timestamp": 2.05407977104187
+    },
+    {
+      "type": "mouse_move",
+      "x": 226,
+      "y": 296,
+      "timestamp": 2.1586928367614746
+    },
+    {
+      "type": "mouse_move",
+      "x": 163,
+      "y": 229,
+      "timestamp": 2.2628090381622314
+    },
+    {
+      "type": "mouse_move",
+      "x": 118,
+      "y": 198,
+      "timestamp": 2.3666036128997803
+    },
+    {
+      "type": "mouse_move",
+      "x": 70,
+      "y": 163,
+      "timestamp": 2.470869541168213
+    },
+    {
+      "type": "mouse_move",
+      "x": 54,
+      "y": 146,
+      "timestamp": 2.5740573406219482
+    },
+    {
+      "type": "mouse_move",
+      "x": 41,
+      "y": 119,
+      "timestamp": 2.6786701679229736
+    },
+    {
+      "type": "mouse_move",
+      "x": 32,
+      "y": 101,
+      "timestamp": 2.7826731204986572
+    },
+    {
+      "type": "mouse_move",
+      "x": 27,
+      "y": 85,
+      "timestamp": 2.886497735977173
+    },
+    {
+      "type": "mouse_click",
+      "x": 21,
+      "y": 71,
+      "button": "Button.left",
+      "pressed": true,
+      "timestamp": 3.1269567012786865
+    },
+    {
+      "type": "mouse_click",
+      "x": 21,
+      "y": 71,
+      "button": "Button.left",
+      "pressed": false,
+      "timestamp": 3.206993579864502
+    },
+    {
+      "type": "mouse_move",
+      "x": 21,
+      "y": 73,
+      "timestamp": 3.5108180046081543
+    },
+    {
+      "type": "mouse_move",
+      "x": 71,
+      "y": 140,
+      "timestamp": 3.614584445953369
+    },
+    {
+      "type": "mouse_move",
+      "x": 228,
+      "y": 231,
+      "timestamp": 3.718461036682129
+    },
+    {
+      "type": "mouse_move",
+      "x": 282,
+      "y": 268,
+      "timestamp": 3.830747604370117
+    },
+    {
+      "type": "key_press",
+      "key": "d",
+      "modifiers": [],
+      "timestamp": 4.334524154663086
+    },
+    {
+      "type": "key_press",
+      "key": "s",
+      "modifiers": [],
+      "timestamp": 4.382643461227417
+    },
+    {
+      "type": "key_release",
+      "key": "s",
+      "timestamp": 4.470607280731201
+    },
+    {
+      "type": "key_press",
+      "key": "f",
+      "modifiers": [],
+      "timestamp": 4.470607280731201
+    },
+    {
+      "type": "key_press",
+      "key": "s",
+      "modifiers": [],
+      "timestamp": 4.582212209701538
+    },
+    {
+      "type": "key_release",
+      "key": "f",
+      "timestamp": 4.62255072593689
+    },
+    {
+      "type": "key_press",
+      "key": "f",
+      "modifiers": [],
+      "timestamp": 4.647275686264038
+    },
+    {
+      "type": "key_release",
+      "key": "s",
+      "timestamp": 4.662138938903809
+    },
+    {
+      "type": "key_release",
+      "key": "d",
+      "timestamp": 4.702710151672363
+    },
+    {
+      "type": "key_press",
+      "key": "d",
+      "modifiers": [],
+      "timestamp": 4.782299041748047
+    },
+    {
+      "type": "key_press",
+      "key": "s",
+      "modifiers": [],
+      "timestamp": 4.783180475234985
+    },
+    {
+      "type": "mouse_move",
+      "x": 289,
+      "y": 276,
+      "timestamp": 4.974687576293945
+    },
+    {
+      "type": "key_release",
+      "key": "f",
+      "timestamp": 4.9822375774383545
+    },
+    {
+      "type": "key_release",
+      "key": "d",
+      "timestamp": 5.031224966049194
+    },
+    {
+      "type": "key_release",
+      "key": "s",
+      "timestamp": 5.031224966049194
+    },
+    {
+      "type": "mouse_move",
+      "x": 524,
+      "y": 284,
+      "timestamp": 5.133934020996094
+    },
+    {
+      "type": "mouse_move",
+      "x": 1295,
+      "y": 207,
+      "timestamp": 5.238712549209595
+    },
+    {
+      "type": "mouse_move",
+      "x": 1668,
+      "y": 156,
+      "timestamp": 5.342857360839844
+    },
+    {
+      "type": "mouse_move",
+      "x": 1714,
+      "y": 136,
+      "timestamp": 5.4468994140625
+    },
+    {
+      "type": "mouse_move",
+      "x": 1753,
+      "y": 131,
+      "timestamp": 5.550854206085205
+    },
+    {
+      "type": "mouse_move",
+      "x": 1767,
+      "y": 125,
+      "timestamp": 5.654209136962891
+    },
+    {
+      "type": "mouse_move",
+      "x": 1825,
+      "y": 112,
+      "timestamp": 5.7587151527404785
+    },
+    {
+      "type": "mouse_move",
+      "x": 1839,
+      "y": 105,
+      "timestamp": 6.069959878921509
+    },
+    {
+      "type": "mouse_move",
+      "x": 1832,
+      "y": 104,
+      "timestamp": 6.349560976028442
+    },
+    {
+      "type": "mouse_click",
+      "x": 1826,
+      "y": 103,
+      "button": "Button.left",
+      "pressed": true,
+      "timestamp": 6.58257532119751
+    },
+    {
+      "type": "mouse_click",
+      "x": 1826,
+      "y": 103,
+      "button": "Button.left",
+      "pressed": false,
+      "timestamp": 6.669986724853516
+    },
+    {
+      "type": "mouse_move",
+      "x": 1812,
+      "y": 105,
+      "timestamp": 6.7748863697052
+    },
+    {
+      "type": "mouse_move",
+      "x": 1498,
+      "y": 237,
+      "timestamp": 6.878732442855835
+    },
+    {
+      "type": "mouse_move",
+      "x": 972,
+      "y": 501,
+      "timestamp": 6.982788324356079
+    },
+    {
+      "type": "mouse_move",
+      "x": 888,
+      "y": 588,
+      "timestamp": 7.086926460266113
+    },
+    {
+      "type": "mouse_move",
+      "x": 890,
+      "y": 607,
+      "timestamp": 7.190645694732666
+    },
+    {
+      "type": "mouse_move",
+      "x": 929,
+      "y": 617,
+      "timestamp": 7.2946248054504395
+    },
+    {
+      "type": "mouse_click",
+      "x": 964,
+      "y": 614,
+      "button": "Button.left",
+      "pressed": true,
+      "timestamp": 8.527012825012207
+    },
+    {
+      "type": "mouse_click",
+      "x": 964,
+      "y": 614,
+      "button": "Button.left",
+      "pressed": false,
+      "timestamp": 8.598758935928345
+    },
+    {
+      "type": "mouse_move",
+      "x": 967,
+      "y": 614,
+      "timestamp": 9.16674280166626
+    },
+    {
+      "type": "mouse_move",
+      "x": 1163,
+      "y": 675,
+      "timestamp": 9.270744562149048
+    }
+  ]
+}

@@ -4,9 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
-build/
+# build/ - Included in repository
 develop-eggs/
-dist/
+# dist/ - Included in repository (contains executable)
 downloads/
 eggs/
 .eggs/
@@ -40,9 +40,8 @@ env/
 # Application specific
 tasks/*.json
 tasks/*.log
-dist/
-build/
-*.exe
+# dist/ and build/ - Included in repository
+# *.exe - Included in repository (executable in dist/)
 
 # OS
 .DS_Store
