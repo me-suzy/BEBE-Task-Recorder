@@ -20,6 +20,14 @@
 
 **BEBE Task Recorder** is a professional-grade macro recording and playback application designed for Windows. Unlike basic macro tools like TinyTask, BEBE offers:
 
+<div align="center">
+
+![BEBE Task Recorder Screenshot](screenshot.png)
+
+*BEBE Task Recorder - Professional GUI Interface*
+
+</div>
+
 - ✅ **Full GUI interface** with real-time event monitoring
 - ✅ **Advanced key combination support** (Ctrl+A, Alt+F4, Ctrl+Shift+B, etc.)
 - ✅ **Precise mouse tracking** (movements, clicks, scrolls)
@@ -196,7 +204,13 @@ To create a standalone `.exe` file with automatic administrator privileges:
 
 ## 🎨 Screenshots
 
-*Screenshots coming soon...*
+<div align="center">
+
+![BEBE Task Recorder Interface](screenshot.png)
+
+*Main interface showing real-time event monitoring, task management, and playback controls*
+
+</div>
 
 ---
 
