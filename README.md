@@ -22,9 +22,9 @@
 
 <div align="center">
 
-![BEBE Task Recorder Screenshot](screenshot.png)
+![BEBE Task Recorder Screenshot](Bebe%20-%20Task%20Recorder%20-%20Version%202.0.png)
 
-*BEBE Task Recorder - Professional GUI Interface*
+*BEBE Task Recorder - Professional GUI Interface - Version 2.0*
 
 </div>
 
@@ -206,9 +206,9 @@ To create a standalone `.exe` file with automatic administrator privileges:
 
 <div align="center">
 
-![BEBE Task Recorder Interface](screenshot.png)
+![BEBE Task Recorder Interface](Bebe%20-%20Task%20Recorder%20-%20Version%202.0.png)
 
-*Main interface showing real-time event monitoring, task management, and playback controls*
+*Main interface showing real-time event monitoring, task management, and playback controls - Version 2.0*
 
 </div>
 
