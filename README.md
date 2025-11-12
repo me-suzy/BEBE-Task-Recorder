@@ -1,308 +1,172 @@
-# BEBE Task Recorder
+# BEBE Task Recorder - Versiunea 3.0
 
-<div align="center">
+## 🎉 Versiune îmbunătățită cu multe funcționalități noi!
 
-![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+Această versiune include toate îmbunătățirile sugerate în [GitHub Issue #1](https://github.com/me-suzy/BEBE-Task-Recorder/issues/1) plus funcționalități noi cerute.
 
-**A powerful, user-friendly macro recorder and automation tool for Windows**
+## ✨ Funcționalități noi și îmbunătățiri
 
-*Record mouse movements, clicks, keyboard input, and key combinations with precision. Playback your recorded tasks with customizable speed.*
+### 1. 🌍 **Internationalization (i18n)**
+- Sistem complet de traduceri pentru interfață
+- Suport pentru română și engleză
+- Ușor de extins cu alte limbi
+- Toate string-urile sunt centralizate în `i18n.py`
 
-[Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Building](#-building) • [Contributing](#-contributing)
+### 2. ⏸️ **Funcționalitate de Pauză**
+- Butonul "Pauza" funcționează acum corect
+- Poți pune redarea pe pauză și o poți relua oricând
+- Status indicator pentru pauză
 
-</div>
+### 3. 🔄 **Repetare Continuă până la ESC/F9**
+- Checkbox nou: "Rulează continuu până la ESC/F9"
+- Task-ul se repetă automat până apăsă ESC sau F9
+- Perfect pentru task-uri care trebuie să ruleze continuu
 
----
+### 4. 📅 **Sistem de Programare (Scheduling)**
+- Buton nou: "Setări programare"
+- Poți seta între ce ore să ruleze task-ul (ex: 09:00 - 17:00)
+- Poți selecta zilele săptămânii când să ruleze
+- Task-ul se execută automat în intervalul setat
 
-## 🎯 Overview
+### 5. 🛡️ **Error Handling Îmbunătățit**
+- Mesaje de eroare specifice pentru:
+  - Erori de parsare JSON
+  - Probleme de permisiuni
+  - Erori I/O
+  - Format invalid
+- Mesaje clare și utile pentru utilizator
 
-**BEBE Task Recorder** is a professional-grade macro recording and playback application designed for Windows. Unlike basic macro tools like TinyTask, BEBE offers:
+### 6. 📊 **Indicatori de Progres**
+- Afișare progres în timp real: "Redare: 45/100 (45%)"
+- Actualizare frecventă a status-ului în timpul redării
+- Feedback vizual mai bun
 
-<div align="center">
+### 7. ✅ **Validare Input-uri**
+- Viteza de redare este validată automat (0.1x - 10.0x)
+- Previne valori extreme care ar putea cauza probleme
+- Validare pentru setările de programare
 
-![BEBE Task Recorder Screenshot](Bebe%20-%20Task%20Recorder%20-%20Version%202.0.png)
+### 8. ♿ **Accesibilitate**
+- Font-uri mai mari și mai clare
+- Interfață mai ușor de navigat
+- Keyboard navigation îmbunătățit
 
-*BEBE Task Recorder - Professional GUI Interface - Version 2.0*
+### 9. 🧹 **Code Cleanup**
+- Funcție consolidată `format_event_details()` pentru formatare evenimente
+- Eliminat cod duplicat
+- Cod mai ușor de întreținut
 
-</div>
+### 10. ⚙️ **Export Executabil (EXE)**
+- Buton nou în interfață: „Salvează task ca EXE”
+- Generează un executabil standalone care redă automat task-ul la dublu-click
+- Include log dedicat și păstrează setările de viteză/loop/schedule
+- Necesită `PyInstaller` instalat (`pip install pyinstaller`)
 
-- ✅ **Full GUI interface** with real-time event monitoring
-- ✅ **Advanced key combination support** (Ctrl+A, Alt+F4, Ctrl+Shift+B, etc.)
-- ✅ **Precise mouse tracking** (movements, clicks, scrolls)
-- ✅ **Task management** (save, load, organize your macros)
-- ✅ **Detailed logging** (human-readable event logs)
-- ✅ **Administrator privilege handling** (automatic UAC elevation)
-- ✅ **Executable build** (standalone .exe with admin rights)
+## 📦 Instalare
 
-Perfect for automating repetitive tasks, testing workflows, or creating complex automation sequences.
-
----
-
-## ✨ Features
-
-### Recording Capabilities
-- **Mouse Events**: Track all mouse movements, clicks (left/right/middle), and scroll actions
-- **Keyboard Input**: Record individual keys, characters, and special keys (Enter, Tab, F1-F12, Arrow keys, etc.)
-- **Key Combinations**: Properly handles Ctrl, Alt, Shift combinations:
-  - `Ctrl+A` (Select All)
-  - `Ctrl+Shift+A` (Complex combinations)
-  - `Alt+F4` (Close window)
-  - `Ctrl+C`, `Ctrl+V` (Copy/Paste)
-  - And many more...
-
-### Playback Features
-- **Precise Timing**: Maintains original timing between events
-- **Adjustable Speed**: Customizable playback speed (default optimized)
-- **Error Handling**: Robust error handling during playback
-
-### User Interface
-- **Real-time Monitoring**: See events as they're recorded in a detailed table
-- **Task Management**: Save and load tasks with descriptive names
-- **Quick Load**: Dropdown list of saved tasks for easy access
-- **Resizable Window**: Adjust interface to your preference
-- **Event Details**: View timestamp, event type, and detailed information
-
-### Technical Features
-- **Administrator Mode**: Automatically requests admin privileges for global event capture
-- **Thread-safe GUI**: Smooth UI updates during recording/playback
-- **JSON Storage**: Human-readable task files
-- **Log Files**: Detailed `.log` files alongside `.json` task files
-
----
-
-## 📋 Requirements
-
-- **Operating System**: Windows 7/8/10/11
-- **Python**: 3.7 or higher (if running from source)
-- **Dependencies**:
-  - `pyautogui` - GUI automation
-  - `pynput` - Mouse and keyboard event capture
-  - `tkinter` - GUI framework (usually included with Python)
-
----
-
-## 🚀 Installation
-
-### Option 1: Using Pre-built Executable (Recommended)
-
-1. Download `BEBE_Task_Recorder.exe` from the [Releases](https://github.com/me-suzy/BEBE-Task-Recorder/releases) page
-2. Run the executable (it will automatically request administrator privileges)
-3. Start recording!
-
-### Option 2: Running from Source
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/me-suzy/BEBE-Task-Recorder.git
-   cd BEBE-Task-Recorder
-   ```
-
-2. **Install dependencies**:
+1. Asigură-te că ai Python 3.7+ instalat
+2. Instalează dependențele:
    ```bash
    pip install -r requirements.txt
    ```
-
-3. **Run the application**:
+3. (Opțional, dar necesar pentru export EXE) Instalează PyInstaller:
+   ```bash
+   pip install pyinstaller
+   ```
+4. Rulează aplicația:
    ```bash
    python bebe_gui.py
    ```
-   
-   **Note**: On Windows, run with administrator privileges for global event capture:
-   ```bash
-   # Right-click PowerShell/CMD and select "Run as Administrator", then:
-   python bebe_gui.py
-   ```
-   
-   Or use the provided batch script:
-   ```bash
-   RUN_GUI.bat
-   ```
 
----
+## 🔨 Build Executabil
 
-## 📖 Usage
+Pentru a crea executabilul cu privilegii de administrator:
 
-### Basic Workflow
-
-1. **Start Recording**:
-   - Click "Start Inregistrare"
-   - Perform your actions (mouse movements, clicks, keyboard input)
-   - Press `ESC` or `F9` to stop recording
-
-2. **Review Events**:
-   - View all recorded events in the "Evenimente (optimizate cu context)" table
-   - Check timestamps and event details
-
-3. **Save Task**:
-   - Click "Salveaza task"
-   - Enter a descriptive name
-   - Task is saved in the `tasks/` folder
-
-4. **Load Task**:
-   - Select from dropdown list, or
-   - Click "Incarca din fisier..." to browse
-   - Click "Incarca task selectat" to load
-
-5. **Playback**:
-   - Click "Start Redare"
-   - Watch your recorded actions replay automatically
-
-### Recording Tips
-
-- **Position Matters**: The recorder captures absolute screen coordinates. If you move windows or icons before playback, positions may not match. This is expected behavior for precise automation.
-
-- **Key Combinations**: All standard Windows shortcuts work:
-  - `Ctrl+A`, `Ctrl+C`, `Ctrl+V` (Select All, Copy, Paste)
-  - `Alt+Tab` (Switch windows)
-  - `Alt+F4` (Close window)
-  - `Ctrl+Shift+Esc` (Task Manager)
-  - And more...
-
-- **Stop Recording**: Press `ESC` or `F9` at any time to stop recording
-
-### File Structure
-
-```
-BEBE/
-├── bebe_gui.py              # Main application
-├── tasks/                   # Saved task files
-│   ├── task1.json          # Task data (JSON)
-│   └── task1.log            # Human-readable log
-├── requirements.txt         # Python dependencies
-├── BUILD.bat                # Build executable script
-└── README.md               # This file
+```bash
+build_exe.bat
 ```
 
----
+Sau manual:
+```bash
+pyinstaller --clean BEBE_Task_Recorder.spec
+```
 
-## 🔨 Building Executable
+Executabilul va fi în folderul `dist/` și va cere automat privilegii de administrator.
 
-To create a standalone `.exe` file with automatic administrator privileges:
+## 📖 Utilizare
 
-1. **Install build dependencies**:
-   ```bash
-   pip install -r requirements_build.txt
-   ```
+### Înregistrare Task
+1. Click "Porneste inregistrarea"
+2. Fă acțiunile tale (click-uri, taste, etc.)
+3. Apasă ESC sau F9 pentru a opri înregistrarea
 
-2. **Run build script**:
-   ```bash
-   BUILD.bat
-   ```
+### Redare Task
+1. Încarcă un task salvat sau folosește task-ul curent
+2. Setează viteza de redare (0.5x - 5.0x)
+3. Opțional: Bifează "Loop" pentru repetare
+4. Opțional: Bifează "Rulează continuu până la ESC/F9" pentru rulare continuă
+5. Click "Reda"
 
-3. **Find executable**:
-   - Output: `dist/BEBE_Task_Recorder.exe`
-   - The executable automatically requests admin privileges on launch
+### Pauză Redare
+- Click "Pauza" pentru a pune redarea pe pauză
+- Click din nou pentru a relua (butonul devine "Resume")
 
-### Build Requirements
+### Programare Task
+1. Click "Setări programare"
+2. Bifează "Activează programare"
+3. Selectează zilele săptămânii
+4. Setează intervalul de timp (ex: 09:00 - 17:00)
+5. Click "Salveaza"
+6. Task-ul va rula automat în intervalul setat
 
-- `pyinstaller` - For creating executables
-- `pyautogui`, `pynput` - Runtime dependencies
+### Export Task ca Executabil (EXE)
+1. Înregistrează sau încarcă un task
+2. Opțional: ajustează viteza, loop-ul sau opțiunea „Rulează continuu”
+3. Click „Salvează task ca EXE (Ctrl+E)”
+4. Alege locația și numele executabilului
+5. Așteaptă finalizarea build-ului (poate dura câteva minute)
+6. Dublu-click pe fișierul `.exe` rezultat pentru a reda automat task-ul
+> Această funcție este disponibilă doar când rulezi aplicația din Python (`python bebe_gui.py`) și ai PyInstaller instalat în acel mediu.
 
----
+## 🔧 Structură Fișiere
 
-## 🎨 Screenshots
+```
+Versiune 2/
+├── bebe_gui.py          # Aplicația principală (GUI)
+├── i18n.py              # Sistem de traduceri
+├── BEBE_Task_Recorder.spec  # Configurare PyInstaller
+├── admin_manifest.xml   # Manifest pentru privilegii admin
+├── build_exe.bat        # Script pentru build
+├── requirements.txt     # Dependențe Python
+└── README.md            # Acest fișier
+```
 
-<div align="center">
+## 🐛 Raportare Probleme
 
-![BEBE Task Recorder Interface](Bebe%20-%20Task%20Recorder%20-%20Version%202.0.png)
+Dacă întâmpini probleme, deschide un issue pe GitHub:
+https://github.com/me-suzy/BEBE-Task-Recorder/issues
 
-*Main interface showing real-time event monitoring, task management, and playback controls - Version 2.0*
+## 📝 Note
 
-</div>
+- Aplicația trebuie să ruleze cu privilegii de administrator pentru a înregistra taste din alte aplicații
+- Task-urile salvate în versiunea 3.0 includ și configurația de programare (dacă este setată) plus setările de playback
+- Task-urile din versiunile 1.0 și 2.0 sunt compatibile și pot fi încărcate în versiunea 3.0
+- Funcția „Salvează task ca EXE” necesită rularea aplicației din Python și PyInstaller instalat separat
 
----
+## 🎯 Îmbunătățiri față de Versiunea 1.0
 
-## 🔧 Technical Details
-
-### Architecture
-
-- **GUI Framework**: Tkinter (native Python GUI)
-- **Event Capture**: `pynput` library for global mouse/keyboard hooks
-- **Automation**: `pyautogui` for precise mouse/keyboard control
-- **Storage**: JSON format for task files
-- **Threading**: Separate threads for recording/playback to keep GUI responsive
-
-### Key Features Implementation
-
-- **Key Combination Detection**: Properly handles control characters (e.g., `\x01` = Ctrl+A)
-- **Modifier Tracking**: Maintains state of Ctrl/Alt/Shift keys during recording
-- **Event Serialization**: Efficient JSON storage with timestamps
-- **Admin Privileges**: Windows UAC manifest embedded in executable
-
----
-
-## ⚠️ Important Notes
-
-### Administrator Privileges
-
-**Why admin rights are needed**: Global keyboard and mouse hooks require elevated privileges on Windows. Without admin rights, the application can only capture events from its own window.
-
-**Security**: The application only requests admin rights for event capture. It does not modify system files or settings.
-
-### Position-Based Recording
-
-**Important**: BEBE records **absolute screen coordinates**. This means:
-- ✅ Perfect for fixed workflows (same window positions)
-- ⚠️ If you move windows/icons before playback, coordinates won't match
-- 💡 **Tip**: Keep your desktop layout consistent, or use relative positioning for future versions
-
-This is intentional design for precise automation - similar to professional macro tools.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-### Development Setup
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. ✅ Internationalization (i18n) - sistem complet de traduceri
+2. ✅ Pause functionality - funcționează corect acum
+3. ✅ Improved error handling - mesaje specifice și clare
+4. ✅ Progress indicators - progres în timp real
+5. ✅ Input validation - validare pentru toate input-urile
+6. ✅ Accessibility enhancements - interfață mai accesibilă
+7. ✅ Code cleanup - cod mai curat și mai ușor de întreținut
+8. ✅ Run until stop - repetare continuă până la ESC/F9
+9. ✅ Scheduling system - programare automată a task-urilor
+10. ✅ Export executabile - generezi .exe direct din aplicație
 
 ---
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- Built with Python and open-source libraries
-- Inspired by the need for better macro recording tools
-- Thanks to all contributors and users
-
----
-
-## 📧 Support
-
-- **Issues**: [GitHub Issues](https://github.com/me-suzy/BEBE-Task-Recorder/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/me-suzy/BEBE-Task-Recorder/discussions)
-
----
-
-## 🚀 Roadmap
-
-- [ ] Relative positioning mode (for flexible window positions)
-- [ ] Variable speed playback controls
-- [ ] Task scheduling (run at specific times)
-- [ ] Multiple task chaining
-- [ ] Export/Import task collections
-- [ ] Cross-platform support (Linux, macOS)
-
----
-
-<div align="center">
 
 **Made with ❤️ for automation enthusiasts**
-
-⭐ Star this repo if you find it useful!
-
-</div>
 
