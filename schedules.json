@@ -1,0 +1,137 @@
+{
+  "schedule_global_enabled": true,
+  "scheduled_tasks": [
+    {
+      "id": "4e53841c",
+      "name": "Sarcina 3",
+      "enabled": true,
+      "action_type": "steps",
+      "steps": [
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1071,
+            "y": 1058,
+            "button": "left"
+          },
+          "timestamp": 1795435756.3279116
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1074,
+            "y": 500,
+            "button": "left"
+          },
+          "timestamp": 1795435757.2563922
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1081,
+            "y": 369,
+            "button": "left"
+          },
+          "timestamp": 1795435757.9118772
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 684,
+            "y": 216,
+            "button": "left"
+          },
+          "timestamp": 1795435758.8238482
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 471,
+            "y": 217,
+            "button": "left"
+          },
+          "timestamp": 1795435759.3594973
+        }
+      ],
+      "task_file": "",
+      "playback_speed": 1.0,
+      "run_mode": "once",
+      "repeat_minutes": 5,
+      "loop_count": 1,
+      "days": [
+        "Monday"
+      ],
+      "specific_date_enabled": false,
+      "specific_date": "",
+      "time_interval_enabled": true,
+      "from_time": "15:25",
+      "to_time": "15:25"
+    },
+    {
+      "id": "ef7896a1",
+      "name": "Sarcina 2",
+      "enabled": true,
+      "action_type": "steps",
+      "steps": [
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1071,
+            "y": 1058,
+            "button": "left"
+          },
+          "timestamp": 1795435756.3279116
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1074,
+            "y": 500,
+            "button": "left"
+          },
+          "timestamp": 1795435757.2563922
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1081,
+            "y": 369,
+            "button": "left"
+          },
+          "timestamp": 1795435757.9118772
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 684,
+            "y": 216,
+            "button": "left"
+          },
+          "timestamp": 1795435758.8238482
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 471,
+            "y": 217,
+            "button": "left"
+          },
+          "timestamp": 1795435759.3594973
+        }
+      ],
+      "task_file": "",
+      "playback_speed": 1.0,
+      "run_mode": "once",
+      "repeat_minutes": 5,
+      "loop_count": 1,
+      "days": [
+        "Monday"
+      ],
+      "specific_date_enabled": false,
+      "specific_date": "",
+      "time_interval_enabled": true,
+      "from_time": "15:25:40",
+      "to_time": "15:25:40"
+    }
+  ]
+}
