@@ -1,0 +1,22 @@
+vrei sa convertesti py in exe. Ai fisierul py:
+
+"e:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\Versiune 5.5.py" 
+
+Deschizi PowerShell si adaugi comanda:
+
+cd "E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3"
+
+și apoi compilezi:
+
+PowerShell
+pyinstaller --clean --onefile --windowed "Versiune 5.5.py"
+
+asta va crea aceste fisiere:
+
+build\
+dist\
+Versiune 5.5.spec
+
+Intri in folderul DIST si acolo vei avea executabilul.
+
+---------------------

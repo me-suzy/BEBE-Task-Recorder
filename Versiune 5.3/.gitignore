@@ -1,0 +1,14 @@
+# Fișiere generate de aplicație (personale: capturi de ecran, jurnal, istoric, programări)
+istoric_capturi/
+bebe_log.txt
+istoric_sarcini.json
+istoric_sarcini.json.tmp
+schedules.json
+schedules.json.tmp
+# Build / cache
+__pycache__/
+build/
+dist/
+*.spec
+*.zip
+.claude/
