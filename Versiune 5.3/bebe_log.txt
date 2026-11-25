@@ -1,0 +1,85 @@
+[2026-11-25 10:34:13] 💤 [SCHEDULER] PC-ul poate intra din nou în Sleep normal.
+[2026-11-25 10:34:15] 🚀 BEBE v5.5 pornit. Jurnal: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\dist\bebe_log.txt | Istoric: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\dist\istoric_sarcini.json
+[2026-11-25 10:34:15] ⚠️ [SCHEDULER] Este OPRIT — cele 1 sarcini active NU vor rula până nu apăsați '▶ Activează Scheduler' (sau bifați 'Pornește automat la deschidere' în Schedule Settings).
+[2026-11-25 10:35:02] 💤 [SCHEDULER] PC-ul poate intra din nou în Sleep normal.
+[2026-11-25 10:35:03] 🚀 BEBE v5.5 pornit. Jurnal: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\bebe_log.txt | Istoric: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\istoric_sarcini.json
+[2026-11-25 10:35:03] ⚠️ [SCHEDULER] Este OPRIT — cele 1 sarcini active NU vor rula până nu apăsați '▶ Activează Scheduler' (sau bifați 'Pornește automat la deschidere' în Schedule Settings).
+[2026-11-25 10:35:11] 🗑️ Șterse din Schedule: Sarcina 1.
+[2026-11-25 10:35:12] 📅 Scheduler este oprit (Global Disabled).
+[2026-11-25 10:35:15] 🔴 Recording started (Press ESC or F1 to stop)
+[2026-11-25 10:35:16] + Clic la (1269, 1054) buton=stânga
+[2026-11-25 10:35:17] + Clic la (1019, 946) buton=stânga
+[2026-11-25 10:35:20] + Tastează: 'c'
+[2026-11-25 10:35:20] + Tastează: 'o'
+[2026-11-25 10:35:20] + Tastează: 'n'
+[2026-11-25 10:35:21] + Tastează: 't'
+[2026-11-25 10:35:21] + Tastează: 'i'
+[2026-11-25 10:35:21] + Tastează: 'n'
+[2026-11-25 10:35:21] + Tastează: 'u'
+[2026-11-25 10:35:21] + Tastează: 'a'
+[2026-11-25 10:35:21] + Combinație taste: space
+[2026-11-25 10:35:21] + Tastează: 'd'
+[2026-11-25 10:35:21] + Tastează: 'e'
+[2026-11-25 10:35:21] + Combinație taste: space
+[2026-11-25 10:35:22] + Tastează: 'u'
+[2026-11-25 10:35:22] + Tastează: 'n'
+[2026-11-25 10:35:22] + Tastează: 'd'
+[2026-11-25 10:35:22] + Tastează: 'e'
+[2026-11-25 10:35:22] + Combinație taste: space
+[2026-11-25 10:35:22] + Tastează: 'a'
+[2026-11-25 10:35:22] + Tastează: 'i'
+[2026-11-25 10:35:23] + Combinație taste: space
+[2026-11-25 10:35:23] + Tastează: 'r'
+[2026-11-25 10:35:23] + Tastează: 'a'
+[2026-11-25 10:35:23] + Tastează: 'm'
+[2026-11-25 10:35:23] + Tastează: 'a'
+[2026-11-25 10:35:23] + Tastează: 's'
+[2026-11-25 10:35:25] + Combinație taste: space
+[2026-11-25 10:35:26] 🎯 CLIC înregistrat la (1019, 946) pe 'Claude [Chrome_WidgetWin_1]' (NU a fost apăsat acum — se va apăsa la redare / la ora programată)
+[2026-11-25 10:35:28] + Clic la (1432, 1061) buton=stânga
+[2026-11-25 10:35:29] + Clic la (757, 164) buton=stânga
+[2026-11-25 10:35:30] + Clic la (377, 163) buton=stânga
+[2026-11-25 10:35:30] ⏹ Recording stopped
+[2026-11-25 10:35:30] 📋 Înregistrarea (32 pași) a fost salvată în Schedule ca 'Sarcina 1' (Mod: O singură dată, Status: În așteptare programare).
+[2026-11-25 10:35:34] 🟢 [SCHEDULER] Master Scheduler ACTIVAT (1 sarcini active în așteptare).
+[2026-11-25 10:35:34] ☕ [SCHEDULER] PC-ul și ecranul sunt ținute TREZE cât timp Scheduler-ul este ON (fără Sleep / Standby / blocare automată)
+[2026-11-25 10:36:01] 💾 Sarcina 'Sarcina 1' a fost salvată pe disc (10:42 - 10:42).
+[2026-11-25 10:36:06] 📅 Scheduler actualizat: 1 sarcini active programate
+[2026-11-25 10:36:06]    • Sarcina 1: 10:42 - 10:42 | Mie | 32 pași înreg. (Mod: O singură dată)
+[2026-11-25 10:42:01] ⏰ [SCHEDULER] S-a declanșat sarcina: 'Sarcina 1' (32 pași, Mod: O singură dată (From = To), Viteză: 2.0x)
+[2026-11-25 10:42:01] ▶️ Playing task once (Speed: 2.0x)
+[2026-11-25 10:42:12] ✅ Playback completed
+[2026-11-25 10:42:12] 📜 [ISTORIC] 'Sarcina 1': ✅ Finalizată (32 pași executați).
+[2026-11-25 10:53:55] 💤 [SCHEDULER] PC-ul poate intra din nou în Sleep normal.
+[2026-11-25 10:53:56] 🚀 BEBE v5.5 pornit. Jurnal: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\bebe_log.txt | Istoric: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\istoric_sarcini.json
+[2026-11-25 10:53:56] ⚠️ [SCHEDULER] Este OPRIT — cele 1 sarcini active NU vor rula până nu apăsați '▶ Activează Scheduler' (sau bifați 'Pornește automat la deschidere' în Schedule Settings).
+[2026-11-25 10:57:30] 💤 [SCHEDULER] PC-ul poate intra din nou în Sleep normal.
+[2026-11-25 10:57:31] 🚀 BEBE v5.5 pornit. Jurnal: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\bebe_log.txt | Istoric: E:\Carte\BB\17 - Site Leadership\alte\Ionel Balauta\Aryeht\Task 1 - Traduce tot site-ul\Doar Google Web\Andreea\Meditatii\2023\++Internet Archive BUN 2025 + Chrome\sarcini repetitive - tinytask.net\BEBE\Versiune 2\Versiune 5.3\istoric_sarcini.json
+[2026-11-25 10:57:31] ⚠️ [SCHEDULER] Este OPRIT — cele 1 sarcini active NU vor rula până nu apăsați '▶ Activează Scheduler' (sau bifați 'Pornește automat la deschidere' în Schedule Settings).
+[2026-11-25 10:57:35] 🗑️ Șterse din Schedule: Sarcina 1.
+[2026-11-25 10:57:37] 📅 Scheduler este oprit (Global Disabled).
+[2026-11-25 10:57:41] 🔴 Recording started (Press ESC or F1 to stop)
+[2026-11-25 10:57:42] + Clic la (1269, 1068) buton=stânga
+[2026-11-25 10:57:43] + Clic la (955, 945) buton=stânga
+[2026-11-25 10:57:47] + Clic la (248, 618) buton=stânga
+[2026-11-25 10:57:49] + Clic la (1102, 934) buton=stânga
+[2026-11-25 10:57:49] + Combinație taste: ctrl + a
+[2026-11-25 10:57:50] + Combinație taste: ctrl + x
+[2026-11-25 10:57:51] + Combinație taste: ctrl + v
+[2026-11-25 10:57:53] + Combinație taste: space
+[2026-11-25 10:57:54] 🎯⏎ CLIC în caseta de text la (1102, 934) + ENTER înregistrate pe 'Claude [Chrome_WidgetWin_1]' (NU au fost apăsate acum — se vor apăsa la redare / la ora programată)
+[2026-11-25 10:57:55] + Clic la (1435, 1048) buton=stânga
+[2026-11-25 10:57:57] + Clic la (843, 268) buton=stânga
+[2026-11-25 10:57:57] + Clic la (440, 246) buton=stânga
+[2026-11-25 10:57:57] ⏹ Recording stopped
+[2026-11-25 10:57:57] 📋 Înregistrarea (13 pași) a fost salvată în Schedule ca 'Sarcina 1' (Mod: O singură dată, Status: În așteptare programare).
+[2026-11-25 10:58:01] 🟢 [SCHEDULER] Master Scheduler ACTIVAT (1 sarcini active în așteptare).
+[2026-11-25 10:58:01] ☕ [SCHEDULER] PC-ul și ecranul sunt ținute TREZE cât timp Scheduler-ul este ON (fără Sleep / Standby / blocare automată)
+[2026-11-25 10:58:15] 💾 Sarcina 'Sarcina 1' a fost salvată pe disc (10:59 - 10:59).
+[2026-11-25 10:58:18] 💾 Sarcina 'Sarcina 1' a fost salvată pe disc (10:59 - 10:59).
+[2026-11-25 10:58:19] 📅 Scheduler actualizat: 1 sarcini active programate
+[2026-11-25 10:58:19]    • Sarcina 1: 10:59 - 10:59 | Mie | 13 pași înreg. (Mod: O singură dată)
+[2026-11-25 10:59:00] ⏰ [SCHEDULER] S-a declanșat sarcina: 'Sarcina 1' (13 pași, Mod: O singură dată (From = To), Viteză: 2.0x)
+[2026-11-25 10:59:01] ▶️ Playing task once (Speed: 2.0x)
+[2026-11-25 10:59:11] ✅ Playback completed
+[2026-11-25 10:59:11] 📜 [ISTORIC] 'Sarcina 1': ✅ Finalizată (13 pași executați).

@@ -252,6 +252,30 @@ def window_title_at(x: int, y: int) -> str:
         return ""
 
 
+def cursor_state() -> str:
+    """'ibeam' = cursorul de TEXT „I”;  'hidden' = cursor ASCUNS (Windows îl ascunde cât timp
+    tastați într-o casetă de text);  'other' = săgeată / mânuță / altceva."""
+    if not _IS_WIN:
+        return 'other'
+    try:
+        class CURSORINFO(ctypes.Structure):
+            _fields_ = [("cbSize", wintypes.DWORD), ("flags", wintypes.DWORD),
+                        ("hCursor", wintypes.HANDLE), ("ptScreenPos", wintypes.POINT)]
+        user32 = ctypes.windll.user32
+        user32.LoadCursorW.restype = wintypes.HANDLE
+        user32.LoadCursorW.argtypes = [wintypes.HINSTANCE, wintypes.LPVOID]
+        ci = CURSORINFO()
+        ci.cbSize = ctypes.sizeof(CURSORINFO)
+        if not user32.GetCursorInfo(ctypes.byref(ci)):
+            return 'other'
+        if not (ci.flags & 0x1) or not ci.hCursor:      # CURSOR_SHOWING lipsă -> ascuns în timpul tastării
+            return 'hidden'
+        ibeam = user32.LoadCursorW(None, ctypes.c_void_p(32513))   # IDC_IBEAM
+        return 'ibeam' if ci.hCursor == ibeam else 'other'
+    except Exception:
+        return 'other'
+
+
 def cursor_is_text_ibeam() -> bool:
     """True dacă mouse-ul arată cursorul de TEXT „I” (deasupra unei casete în care se scrie)."""
     if not _IS_WIN:
@@ -1441,6 +1465,8 @@ class TaskController:
             return
         self.recording = True
         self.log("🔴 Recording started (Press ESC or F1 to stop)")
+        self._rec_last_click = None
+        self._rec_typed_since_click = False
         print("[CTRL] Recording STARTED")
 
         def on_click(x, y, button, pressed, injected=False):
@@ -1451,6 +1477,8 @@ class TaskController:
                 return
             if pressed:
                 self.add_step(Step("ClickAt", {"x": x, "y": y, "button": str(button).split(".")[-1]}))
+                self._rec_last_click = (int(x), int(y))
+                self._rec_typed_since_click = False
                 self.ui_queue.put(("refresh", None))
 
         # Starea tastelor modificatoare: nume normalizat ('ctrl','alt','shift','win','altgr') -> folosită într-o combinație?
@@ -1512,12 +1540,15 @@ class TaskController:
                 if not real_mods and ch and ch.isprintable():
                     # Text normal (inclusiv litere mari cu Shift și diacritice cu AltGr)
                     self.add_step(Step("SendKeys", {"text": ch}))
+                    self._rec_typed_since_click = True
                 else:
                     base = keycode_base_name(key)
                     if not base:
                         return
                     combo = mods + [base] if mods else [base]
                     self.add_step(Step("Hotkey", {"combo": combo}))
+                    if combo in (['space'], ['backspace'], ['delete'], ['ctrl', 'v'], ['shift', 'insert']):
+                        self._rec_typed_since_click = True
                 self.ui_queue.put(("refresh", None))
             except Exception as e:
                 print(f"[CTRL] Error recording key: {e}")
@@ -1577,10 +1608,21 @@ class TaskController:
                 what = 'dblclick'
             elif shift:
                 what = 'enter'
-            elif cursor_is_text_ibeam():
-                what = 'click+enter'
             else:
-                what = 'click'
+                state = cursor_state()
+                mx, my = pyautogui.position()
+                lc = getattr(self, '_rec_last_click', None)
+                near_last_click = bool(lc) and abs(mx - lc[0]) <= 80 and abs(my - lc[1]) <= 80
+                typed = getattr(self, '_rec_typed_since_click', False)
+                if state == 'ibeam':
+                    what = 'click+enter'       # mouse pe o casetă de text
+                elif state == 'hidden':
+                    what = 'click+enter'       # cursor ascuns = tocmai ați tastat într-o casetă de text
+                elif typed and near_last_click:
+                    what = 'click+enter'       # ați dat clic aici, ați scris text, mouse-ul a rămas pe casetă
+                else:
+                    what = 'click'             # iconiță / buton
+                print(f"[CTRL] Virtual smart: cursor={state}, typed={typed}, near_last_click={near_last_click} -> {what}")
         if what == 'enter':
             step = Step("Hotkey", {"combo": ["enter"], "virtual": True})
             msg = "⏎ ENTER înregistrat (NU a fost apăsat acum — se va apăsa la redare / la ora programată)"

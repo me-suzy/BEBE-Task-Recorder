@@ -1,0 +1,153 @@
+{
+  "schedule_global_enabled": true,
+  "keep_awake": true,
+  "auto_start_scheduler": false,
+  "lock_check": true,
+  "capture_screens": true,
+  "scheduled_tasks": [
+    {
+      "id": "dffddf26",
+      "name": "Sarcina 1",
+      "enabled": true,
+      "action_type": "steps",
+      "steps": [
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1269,
+            "y": 1068,
+            "button": "left"
+          },
+          "timestamp": 1795597062.858033
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 955,
+            "y": 945,
+            "button": "left"
+          },
+          "timestamp": 1795597063.5856957
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 248,
+            "y": 618,
+            "button": "left"
+          },
+          "timestamp": 1795597067.7305756
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1102,
+            "y": 934,
+            "button": "left"
+          },
+          "timestamp": 1795597069.3784056
+        },
+        {
+          "kind": "Hotkey",
+          "args": {
+            "combo": [
+              "ctrl",
+              "a"
+            ]
+          },
+          "timestamp": 1795597069.8261602
+        },
+        {
+          "kind": "Hotkey",
+          "args": {
+            "combo": [
+              "ctrl",
+              "x"
+            ]
+          },
+          "timestamp": 1795597070.2826068
+        },
+        {
+          "kind": "Hotkey",
+          "args": {
+            "combo": [
+              "ctrl",
+              "v"
+            ]
+          },
+          "timestamp": 1795597071.9958236
+        },
+        {
+          "kind": "Hotkey",
+          "args": {
+            "combo": [
+              "space"
+            ]
+          },
+          "timestamp": 1795597073.1551023
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1102,
+            "y": 934,
+            "button": "left",
+            "virtual": true
+          },
+          "timestamp": 1795597074.1234148
+        },
+        {
+          "kind": "Hotkey",
+          "args": {
+            "combo": [
+              "enter"
+            ],
+            "virtual": true
+          },
+          "timestamp": 1795597074.5234149
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 1435,
+            "y": 1048,
+            "button": "left"
+          },
+          "timestamp": 1795597075.986275
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 843,
+            "y": 268,
+            "button": "left"
+          },
+          "timestamp": 1795597077.1307836
+        },
+        {
+          "kind": "ClickAt",
+          "args": {
+            "x": 440,
+            "y": 246,
+            "button": "left"
+          },
+          "timestamp": 1795597077.8668098
+        }
+      ],
+      "task_file": "",
+      "playback_speed": 2.0,
+      "run_mode": "once",
+      "repeat_minutes": 5,
+      "loop_count": 1,
+      "days": [
+        "Wednesday"
+      ],
+      "specific_date_enabled": false,
+      "specific_date": "",
+      "time_interval_enabled": true,
+      "from_time": "10:59",
+      "to_time": "10:59",
+      "last_run_date": "2026-11-25"
+    }
+  ]
+}
